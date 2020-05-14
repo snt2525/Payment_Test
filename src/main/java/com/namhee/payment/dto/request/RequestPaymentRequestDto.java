@@ -1,4 +1,4 @@
-package com.namhee.payment.dto;
+package com.namhee.payment.dto.request;
 
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
@@ -27,7 +27,7 @@ public class RequestPaymentRequestDto {
 
     @NotNull
     @Range(min = 0, max = 12)
-    int installment_months;
+    int install_month;
 
     @NotNull
     @Range(min = 100, max = 1000000000)

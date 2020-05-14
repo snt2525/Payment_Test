@@ -3,19 +3,17 @@ package com.namhee.payment.dto;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
+import javax.validation.constraints.NotNull;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CancelRequestDto {
+public class CardInfo {
+    String card_num;
 
-    @NonNull
-    @Length(min = 20, max = 20)
-    String payment_uid;
+    String validity;
 
-    @NonNull
-    int cancel_amount;
-
-    int cancel_vat_amount;
+    String cvc;
 }
