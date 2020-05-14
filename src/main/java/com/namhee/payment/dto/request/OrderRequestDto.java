@@ -1,6 +1,7 @@
 package com.namhee.payment.dto.request;
 
 import lombok.*;
+import org.hibernate.validator.constraints.Length;
 
 @Getter
 @Setter
@@ -8,9 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class OrderRequestDto {
-
+    @NonNull
+    @Length(min = 20, max = 20)
     String tid;
-
-    String card_info;
-
 }
