@@ -3,16 +3,10 @@ package com.namhee.payment.utils;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
-import org.apache.commons.lang.builder.ToStringBuilder;
 import org.springframework.context.MessageSource;
 
 import java.util.Date;
 
-/**
- * 실행 결과를 결과 코드를 포함한 JSON으로 감싸기 위한 컨테이너
- * @author nahoya
- *
- */
 @Data
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonIgnoreProperties(value = {"error"})
