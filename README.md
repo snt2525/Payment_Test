@@ -4,5 +4,5 @@
 Payment DB Table
 -----------
 <div>
-<img width="500" src="https://user-images.githubusercontent.com/40882598/82111859-d139f300-9782-11ea-9af8-a4dd77c75ed4.png">
+<img width="450" src="https://user-images.githubusercontent.com/40882598/82111918-5de4b100-9783-11ea-9f05-8e28e76a8054.png">
 </div>
