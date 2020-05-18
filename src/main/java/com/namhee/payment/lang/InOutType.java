@@ -1,4 +1,4 @@
-package com.namhee.payment.utils;
+package com.namhee.payment.lang;
 
 public enum InOutType {
     IN , OUT

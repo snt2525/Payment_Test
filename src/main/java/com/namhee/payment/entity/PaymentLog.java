@@ -1,6 +1,6 @@
 package com.namhee.payment.entity;
 
-import com.namhee.payment.utils.InOutType;
+import com.namhee.payment.lang.InOutType;
 
 import javax.persistence.*;
 import java.util.Date;

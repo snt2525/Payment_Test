@@ -1,7 +1,7 @@
 package com.namhee.payment.entity;
 
 
-import com.namhee.payment.utils.PaymentStatusType;
+import com.namhee.payment.lang.PaymentStatusType;
 
 import javax.persistence.*;
 import java.util.ArrayList;

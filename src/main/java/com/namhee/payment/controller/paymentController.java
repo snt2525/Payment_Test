@@ -2,7 +2,7 @@ package com.namhee.payment.controller;
 
 import com.namhee.payment.dto.request.CancelRequestDto;
 import com.namhee.payment.dto.request.RequestPaymentRequestDto;
-import com.namhee.payment.utils.ResultJsonContainer;
+import com.namhee.payment.struct.ResultJsonContainer;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
