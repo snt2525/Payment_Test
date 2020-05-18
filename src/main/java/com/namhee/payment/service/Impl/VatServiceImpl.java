@@ -5,7 +5,9 @@ import com.namhee.payment.entity.PaymentErrorCode;
 import com.namhee.payment.lang.HttpStatusCode;
 import com.namhee.payment.service.CalculateVatService;
 import com.namhee.payment.service.VatService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class VatServiceImpl implements VatService {
     private final CalculateVatService calculateVatService;
 

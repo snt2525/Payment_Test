@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.namhee.payment.lang.HttpStatusCode;
 import lombok.Data;
+import lombok.Getter;
 import org.springframework.context.MessageSource;
 
 import java.time.LocalDateTime;
@@ -41,29 +42,5 @@ public class ResultJsonContainer {
 		
 		this( HttpStatusCode.OK, "0000", "ok good", "", LocalDateTime.now());
 		this.result = result;
-	}
-	
-	public Object getResult() {
-		return result;
-	}
-	
-	public String getStatus() {
-		return status.code;
-	}
-	
-	public String getSysTemMsg() {
-		return systemMsg;
-	}
-	
-	public String getResultCode() {
-		return resultCode;
-	}
-	
-	public String getReason() {
-		return reason;
-	}
-
-	public LocalDateTime getResponseTime() {
-		return responseTime;
 	}
 }

@@ -25,5 +25,5 @@ public enum HttpStatusCode {
 	HttpStatusCode(String code) {
 		this.code = code;
 	}
-	
+
 }
