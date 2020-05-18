@@ -10,18 +10,24 @@ import org.springframework.web.bind.annotation.*;
 public class PaymentController {
 
     @PostMapping(value = "/request")
-    public Object requestPayment(@RequestBody RequestPaymentRequestDto requestPaymentRequestDto) throws Exception{
+    public Object requestPayment(
+            @RequestBody RequestPaymentRequestDto requestPaymentRequestDto
+    ) throws Exception{
         return "";
     }
 
     @PostMapping(value = "/cancel")
-    public Object cancelPayment(@RequestBody CancelRequestDto cancelRequestDto) throws Exception{
+    public Object cancelPayment(
+            @RequestBody CancelRequestDto cancelRequestDto
+    ) throws Exception{
         return "";
     }
 
     @GetMapping(value = "/order")
     @ResponseBody
-    public ResultJsonContainer getOrderInfo(@RequestParam("tid") String tid) throws Exception{
+    public ResultJsonContainer getOrderInfo(
+            @RequestParam("tid") String tid
+    ) throws Exception{
         return new ResultJsonContainer("");
     }
 

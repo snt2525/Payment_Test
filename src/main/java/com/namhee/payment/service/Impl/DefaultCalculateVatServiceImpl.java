@@ -2,7 +2,7 @@ package com.namhee.payment.service.Impl;
 
 import com.namhee.payment.service.CalculateVatService;
 
-public class defaultCalculateVatServiceImpl implements CalculateVatService {
+public class DefaultCalculateVatServiceImpl implements CalculateVatService {
 
     @Override
     public int calculateVat(int amount) {

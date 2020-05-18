@@ -20,7 +20,7 @@ public class VatServiceImpl implements VatService {
         isVaildVatAmount(amount, vatAmountAtoi);
 
         if(vatAmount == null){
-            vatAmountAtoi = getCalculateVat(amount, vatAmountAtoi);
+            vatAmountAtoi = getCalculateVat(amount);
         }
 
         return vatAmountAtoi;
@@ -33,7 +33,7 @@ public class VatServiceImpl implements VatService {
         }
     }
 
-    private int getCalculateVat(int amount, int vat) {
+    private int getCalculateVat(int amount) {
         return calculateVatService.calculateVat(amount);
     }
 }
