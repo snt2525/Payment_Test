@@ -12,14 +12,14 @@ public class PaymentController {
     @PostMapping(value = "/request")
     public Object requestPayment(
             @RequestBody RequestPaymentRequestDto requestPaymentRequestDto
-    ) throws Exception{
+    ) throws Exception {
         return "";
     }
 
     @PostMapping(value = "/cancel")
     public Object cancelPayment(
             @RequestBody CancelRequestDto cancelRequestDto
-    ) throws Exception{
+    ) throws Exception {
         return "";
     }
 
@@ -27,7 +27,7 @@ public class PaymentController {
     @ResponseBody
     public ResultJsonContainer getOrderInfo(
             @RequestParam("tid") String tid
-    ) throws Exception{
+    ) throws Exception {
         return new ResultJsonContainer("");
     }
 

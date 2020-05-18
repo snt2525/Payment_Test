@@ -9,7 +9,6 @@ import org.springframework.context.MessageSource;
 
 import java.time.LocalDateTime;
 
-
 @Data
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 @JsonIgnoreProperties(value = {"error"})
@@ -34,12 +33,10 @@ public class ResultJsonContainer {
 	}
 	
 	public ResultJsonContainer(HttpStatusCode code, String resultCode, String systemMsg) {
-		
 		this( code, resultCode, systemMsg, "" , LocalDateTime.now());
 	}
 
 	public ResultJsonContainer(Object result) {
-		
 		this( HttpStatusCode.OK, "0000", "ok good", "", LocalDateTime.now());
 		this.result = result;
 	}

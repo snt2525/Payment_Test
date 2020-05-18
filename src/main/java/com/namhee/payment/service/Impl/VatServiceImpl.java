@@ -21,7 +21,7 @@ public class VatServiceImpl implements VatService {
 
         isVaildVatAmount(amount, vatAmountAtoi);
 
-        if(vatAmount == null){
+        if(vatAmount == null) {
             vatAmountAtoi = getCalculateVat(amount);
         }
 
@@ -30,7 +30,7 @@ public class VatServiceImpl implements VatService {
 
     @Override
     public void isVaildVatAmount(int amount, int vatAmount) {
-        if(amount < vatAmount){
+        if(amount < vatAmount) {
             throw new PaymentException(HttpStatusCode.Bad_Request, PaymentErrorCode.Invaild_Vat_Amount);
         }
     }
