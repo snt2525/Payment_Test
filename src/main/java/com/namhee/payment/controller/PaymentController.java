@@ -7,21 +7,22 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value= "/api/payment")
-public class paymentController {
+public class PaymentController {
 
     @PostMapping(value = "/request")
     public Object requestPayment(@RequestBody RequestPaymentRequestDto requestPaymentRequestDto) throws Exception{
-        return new ResultJsonContainer(requestPaymentRequestDto);
+        return "";
     }
 
     @PostMapping(value = "/cancel")
     public Object cancelPayment(@RequestBody CancelRequestDto cancelRequestDto) throws Exception{
-        return new ResultJsonContainer(cancelRequestDto);
+        return "";
     }
 
     @GetMapping(value = "/order")
-    public Object getOrderInfo(@RequestBody CancelRequestDto cancelRequestDto) throws Exception{
-        return new ResultJsonContainer(cancelRequestDto);
+    @ResponseBody
+    public ResultJsonContainer getOrderInfo(@RequestParam("tid") String tid) throws Exception{
+        return new ResultJsonContainer("");
     }
 
 }

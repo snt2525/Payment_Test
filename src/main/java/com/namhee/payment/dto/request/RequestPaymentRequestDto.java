@@ -33,5 +33,5 @@ public class RequestPaymentRequestDto {
     @Range(min = 100, max = 1000000000)
     int amount;
 
-    int vat_amount;
+    String vat_amount;
 }

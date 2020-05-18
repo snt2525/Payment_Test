@@ -21,27 +21,25 @@ public class ResultJsonContainer {
 	
 	private String	resultCode;
 	private String	systemMsg;
-	private String	userMsg;
 	private String	reason;
 	private LocalDateTime responseTime;
 	
-	public ResultJsonContainer(HttpStatusCode code, String resultCode, String systemMsg, String userMsg, String reason, LocalDateTime currentTime) {
+	public ResultJsonContainer(HttpStatusCode code, String resultCode, String systemMsg, String reason, LocalDateTime currentTime) {
 		this.status			= code;
 		this.resultCode		= resultCode;
 		this.systemMsg		= systemMsg;
-		this.userMsg		= userMsg;
 		this.reason			= reason;
 		this.responseTime 	= currentTime;
 	}
 	
-	public ResultJsonContainer(HttpStatusCode code, String resultCode, String systemMsg, String userMsg) {
+	public ResultJsonContainer(HttpStatusCode code, String resultCode, String systemMsg) {
 		
-		this( code, resultCode, systemMsg, userMsg, "" , LocalDateTime.now());
+		this( code, resultCode, systemMsg, "" , LocalDateTime.now());
 	}
 
 	public ResultJsonContainer(Object result) {
 		
-		this( HttpStatusCode.OK, "0000", "ok good", "OK", "", LocalDateTime.now());
+		this( HttpStatusCode.OK, "0000", "ok good", "", LocalDateTime.now());
 		this.result = result;
 	}
 	
@@ -51,10 +49,6 @@ public class ResultJsonContainer {
 	
 	public String getStatus() {
 		return status.code;
-	}
-	
-	public String getUserMsg() {
-		return userMsg;
 	}
 	
 	public String getSysTemMsg() {
