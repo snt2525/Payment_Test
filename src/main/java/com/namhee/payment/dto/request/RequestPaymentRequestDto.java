@@ -1,10 +1,10 @@
 package com.namhee.payment.dto.request;
 
 import lombok.*;
-import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Getter
 @Setter
@@ -14,15 +14,15 @@ import javax.validation.constraints.NotNull;
 public class RequestPaymentRequestDto {
 
     @NotNull
-    @Length(min = 10, max = 16)
+    @Size(min = 10, max = 16)
     String card_number;
 
     @NotNull
-    @Length(min = 4, max = 4)
+    @Size(min = 4, max = 4)
     String validity;
 
     @NotNull
-    @Length(min = 3, max = 3)
+    @Size(min = 3, max = 3)
     String cvc;
 
     @NotNull
